@@ -1,4 +1,5 @@
 <?php
+require_once "config/app.php";
 require_once 'components/navbar.php';
 require_once 'auth/Authentication.php';
 ?>
@@ -19,6 +20,7 @@ require_once 'auth/Authentication.php';
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
+                <?php include "message.php";?>
                 <div class="card">
                     <div class="card-header">
                         <h4>Register</h4>
