@@ -16,16 +16,17 @@ function base_url($slug)
     echo SITE_URL . $slug;
 }
 
-function redirect($message, $page) {
-    $redirectTo = SITE_URL.$page;
+function redirect($message, $page)
+{
+    $redirectTo = SITE_URL . $page;
     $_SESSION['message'] = "$message";
     header("Location: $redirectTo");
     exit(0);
 }
 
-function validateInput($dbcon,$input)
+function validateInput($dbcon, $input)
 {
-    return mysqli_real_escape_string($dbcon,$input);
+    return mysqli_real_escape_string($dbcon, $input);
 }
 
 ?>

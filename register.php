@@ -13,14 +13,13 @@ require_once 'auth/Authentication.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Register</title>
     <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
 <div class="py-5">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-5">
-                <?php include "message.php";?>
+                <?php include "message.php"; ?>
                 <div class="card">
                     <div class="card-header">
                         <h4>Register</h4>

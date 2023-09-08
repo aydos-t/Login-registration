@@ -12,7 +12,6 @@ require_once 'components/navbar.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
-    <link rel="stylesheet" href="assets/css/custom.css">
 </head>
 <body>
 <div class="py-5">

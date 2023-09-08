@@ -14,7 +14,7 @@ if (isset($_POST['register_btn'])) {
     if ($resultPassword) {
 
     } else {
-        redirect("Password and confirm password Does not match","register.php");
+        redirect("Password and confirm password Does not match", "register.php");
     }
 }
 ?>
