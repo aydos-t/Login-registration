@@ -11,8 +11,8 @@ class RegisterController
 
     public function registration($name, $surName, $email, $password)
     {
-        $register_query = "INSERT INTO users (name,surName,email,password) VALUES ('$name','$surName','$email','$password')";
-        $result = $this -> conn -> query($register_query);
+        $registerQuery = "INSERT INTO users (name,surName,email,password) VALUES ('$name','$surName','$email','$password')";
+        $result = $this -> conn -> query($registerQuery);
         return $result;
     }
 
