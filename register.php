@@ -1,7 +1,7 @@
 <?php
 require_once "config/app.php";
-require_once 'components/navbar.php';
 require_once 'auth/Authentication.php';
+require_once 'components/navbar.php';
 ?>
 
 <!doctype html>

@@ -12,7 +12,18 @@ if (isset($_POST['register_btn'])) {
     $register = new RegisterController;
     $resultPassword = $register -> confirmPassword($password, $confirm_password);
     if ($resultPassword) {
-
+        $resultUser = $register->isUserExists($email);
+        if ($resultUser){
+            redirect("Email already exists");
+        }
+        else {
+            $registerQuery = $register->registration($name,$surName,$email,$password);
+            if ($registerQuery) {
+                redirect("Registered Successfully", "login.php");
+            } else {
+                redirect("Something went wrong!", "register.php");
+            }
+        }
     } else {
         redirect("Password and confirm password Does not match", "register.php");
     }
