@@ -30,7 +30,15 @@ class LoginController
             'user_surName' => $data['surName'],
             'user_email' => $data['email']
         ];
+    }
 
+    public function isLoggedIn()
+    {
+        if (isset($_SESSION['authenticated']) === TRUE){
+            redirect("You are already Logged In", "index.php");
+        } else {
+            return false;
+        }
     }
 }
 

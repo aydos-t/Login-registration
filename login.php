@@ -1,6 +1,8 @@
 <?php
 require_once "config/app.php";
 require_once "auth/Authentication.php";
+$auth->isLoggedIn();
+
 require_once 'components/navbar.php';
 ?>
 
