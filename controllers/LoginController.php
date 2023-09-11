@@ -34,8 +34,20 @@ class LoginController
 
     public function isLoggedIn()
     {
-        if (isset($_SESSION['authenticated']) === TRUE){
+        if (isset($_SESSION['authenticated']) === TRUE) {
             redirect("You are already Logged In", "index.php");
+        } else {
+            return false;
+        }
+    }
+
+    public function logout()
+    {
+        if (isset($_SESSION['authenticated']) === TRUE)
+        {
+            unset($_SESSION['authenticated']);
+            unset($_SESSION['auth_user']);
+            return true;
         } else {
             return false;
         }

@@ -1,6 +1,7 @@
 <?php
 require_once "config/app.php";
-require_once 'auth/Authentication.php';
+$auth->isLoggedIn();
+
 require_once 'components/navbar.php';
 ?>
 
@@ -28,23 +29,23 @@ require_once 'components/navbar.php';
                         <form action="" method="POST">
                             <div class="form-group mb-3">
                                 <label>Name</label>
-                                <input type="text" name="name" class="form-control">
+                                <input type="text" name="name" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label>SurName</label>
-                                <input type="text" name="surName" class="form-control">
+                                <input type="text" name="surName" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Email</label>
-                                <input type="email" name="email" class="form-control">
+                                <input type="email" name="email" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Password</label>
-                                <input type="password" name="password" class="form-control">
+                                <input type="password" name="password" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Confirm Password</label>
-                                <input type="password" name="confirm_password" class="form-control">
+                                <input type="password" name="confirm_password" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit" name="register_btn" class="btn btn-primary">Register</button>

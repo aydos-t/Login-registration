@@ -10,6 +10,7 @@ define('SITE_URL', 'http://login-register-php-oop/');
 
 include_once('DatabaseConnection.php');
 $db = new DatabaseConnection;
+require_once "auth/Authentication.php";
 
 function base_url($slug)
 {

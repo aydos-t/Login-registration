@@ -12,16 +12,13 @@ require_once 'components/navbar.php';
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
     <link rel="stylesheet" href="assets/css/bootstrap5.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </head>
 <body>
 <div class="py-5">
     <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <?php include "message.php"; ?>
-                <h3>Home Page</h3>
-            </div>
-        </div>
+        <?php include "message.php"; ?>
+        <h3>Home Page</h3>
     </div>
 </div>
 </body>

@@ -1,6 +1,5 @@
 <?php
 require_once "config/app.php";
-require_once "auth/Authentication.php";
 $auth->isLoggedIn();
 
 require_once 'components/navbar.php';
@@ -30,12 +29,12 @@ require_once 'components/navbar.php';
                         <form action="" method="POST">
                             <div class="form-group mb-3">
                                 <label>Email</label>
-                                <input type="email" name="email" placeholder="Enter Email Address" class="form-control">
+                                <input type="email" name="email" placeholder="Enter Email Address" class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Password</label>
                                 <input type="password" name="password" placeholder="Enter Password"
-                                       class="form-control">
+                                       class="form-control" required>
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit" name="login_btn" class="btn btn-primary">Login</button>
