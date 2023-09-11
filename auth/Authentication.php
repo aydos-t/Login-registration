@@ -1,10 +1,19 @@
 <?php
 //include 'config/app.php';
 include 'controllers/RegisterController.php';
+include 'controllers/LoginController.php';
 
 if (isset($_POST['login_btn'])) {
     $email = validateInput($db->conn, $_POST['email']);
     $password = validateInput($db->conn, $_POST['password']);
+
+    $auth = new LoginController;
+    $checkLogin = $auth->userLogin($email, $password);
+    if ($checkLogin) {
+        redirect("Logged in Successfully","index.php")  ;
+    } else {
+        redirect("Invalid Email or Password", "login.php");
+    }
 }
 
 if (isset($_POST['register_btn'])) {

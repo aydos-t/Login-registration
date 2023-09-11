@@ -18,6 +18,7 @@ require_once 'components/navbar.php';
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                <?php include "message.php"; ?>
                 <h3>Home Page</h3>
             </div>
         </div>
