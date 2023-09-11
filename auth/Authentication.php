@@ -2,6 +2,11 @@
 //include 'config/app.php';
 include 'controllers/RegisterController.php';
 
+if (isset($_POST['login_btn'])) {
+    $email = validateInput($db->conn, $_POST['email']);
+    $password = validateInput($db->conn, $_POST['password']);
+}
+
 if (isset($_POST['register_btn'])) {
     $name = validateInput($db -> conn, $_POST['name']);
     $surName = validateInput($db -> conn, $_POST['surName']);
